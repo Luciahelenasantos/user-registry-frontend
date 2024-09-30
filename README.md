@@ -2,6 +2,8 @@
 
 Este repositório contém o código-fonte do front-end da aplicação de gerenciamento de usuários, desenvolvido com **Next.js**, **React** e **TypeScript**. A interface permite criar, editar, visualizar e excluir usuários de forma interativa, além de buscar automaticamente endereços por meio da API ViaCEP.
 
+O Desenho da Arquitetura está na raiz do projeto, no arquivo Desenho de Arquitetura.png
+
 ## Tecnologias Utilizadas
 
 - **Next.js**: Framework React para renderização no lado do servidor e navegação otimizada.
