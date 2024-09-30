@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend para Sistema de Gerenciamento de Usuários
 
-## Getting Started
+Este repositório contém o código-fonte do front-end da aplicação de gerenciamento de usuários, desenvolvido com **Next.js**, **React** e **TypeScript**. A interface permite criar, editar, visualizar e excluir usuários de forma interativa, além de buscar automaticamente endereços por meio da API ViaCEP.
 
-First, run the development server:
+## Tecnologias Utilizadas
+
+- **Next.js**: Framework React para renderização no lado do servidor e navegação otimizada.
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
+- **Tailwind CSS**: Framework CSS para estilização rápida e personalizada.
+- **Axios**: Biblioteca para realizar requisições HTTP.
+
+## Funcionalidades
+
+- CRUD de usuários (criação, consulta, atualização, exclusão).
+- Consumo de API externa ViaCEP para preenchimento automático de endereços.
+
+## Pré-requisitos
+
+Antes de começar, você precisará ter as seguintes ferramentas instaladas:
+
+- [Node.js](https://nodejs.org/en/) (versão 14 ou superior)
+- [Git](https://git-scm.com)
+
+## Instalação e Configuração
+
+Siga os passos abaixo para rodar o projeto localmente:
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/Luciahelenasantos/user-registry-frontend.git
+cd user-registry-frontend
+```
+
+### 2. Instale as dependências
+
+```bash
+npm install
+```
+
+### 3. Instale as dependências
+
+Execute o projeto
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Esse comando iniciará o servidor de desenvolvimento. A aplicação estará disponível em <http://localhost:3000>.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Testando a Aplicação
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Você pode acessar a aplicação localmente e testar as seguintes funcionalidades
 
-## Learn More
+- Listar Usuários: Visualize todos os usuários cadastrados.
+- Buscar Usuários: Buscas por CPF e e-mail.
+- Adicionar Usuários: Cadastre novos usuários com informações como nome, CPF, e endereço.
+- Editar Usuários: Atualize as informações de qualquer usuário.
+- Deletar Usuários: Exclua um usuário da base de dados.
+- Buscar Endereço: Insira um CEP válido e veja o endereço ser preenchido automaticamente através da API do ViaCEP.
 
-To learn more about Next.js, take a look at the following resources:
+## Documentação da API
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Certifique-se de que o backend da aplicação esteja rodando corretamente para consumir a API e usar a documentação interativa do Swagger em <http://localhost:8080/swagger-ui.html>.
