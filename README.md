@@ -58,7 +58,6 @@ Esse comando iniciará o servidor de desenvolvimento. A aplicação estará disp
 - Adicionar Usuários: Cadastre novos usuários com informações como nome, CPF, e endereço.
 - Editar Usuários: Atualize as informações de qualquer usuário.
 - Deletar Usuários: Exclua um usuário da base de dados.
-- Buscar Endereço: Insira um CEP válido e veja o endereço ser preenchido automaticamente através da API do ViaCEP.
 
 ## Documentação da API
 
